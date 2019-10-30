@@ -6,7 +6,35 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e55f510-1325-4227-92e3-3ebfc00cf88b" name="Default Changelist" comment="" />
+    <list default="true" id="5e55f510-1325-4227-92e3-3ebfc00cf88b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/DeviceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/ProcessImageBatchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_processing/ImagePixelStatistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Intensity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/metaMaxManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/metaMaxManager.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/metaMaxManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/metaMaxManager.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/HelloWorldPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/HelloWorldPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/HTTPPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/HTTPPostRequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.form" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/View.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/View.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helloWorldPlugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/helloWorldPlugin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/helloworld/view/View.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/HelloWorldPlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/HelloWorldPlugin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/controller/HTTPPostController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/model/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/model/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,25 +51,34 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1RI1KpbnpdgNTH33pgRJ74MxkyH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="findjar.last.used.dir" value="$USER_HOME$/bin" />
+    <property name="last_opened_file_path" value="$USER_HOME$/cs509/cs509resources/LambdaCalculator" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propGUI" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/HelloWorld/src/org/micromanager/helloworld/view" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/HelloWorld" />
+      <recent name="$PROJECT_DIR$/HelloWorld/src/org/micromanager/helloworld/view" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/HelloWorld/src/org/micromanager/helloworld/view" />
     </key>
   </component>
@@ -57,7 +94,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestParticleHTTP">
+  <component name="RunManager" selected="Application.RunTests">
+    <configuration name="ImageJ" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ij.ImageJ" />
+      <module name="metaMaxManager" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/mm/micro-manager2.0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.RunTests" />
+      <module name="metaMaxManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestHTTP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.google.api.services.samples.dailymotion.cmdline.simple.TestHTTP" />
       <module name="metaMaxManager" />
@@ -90,12 +150,15 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.ImageJ" />
       <item itemvalue="Application.TestHTTP" />
       <item itemvalue="Application.TestParticleHTTP" />
+      <item itemvalue="Application.RunTests" />
       <item itemvalue="JAR Application.ij.jar" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RunTests" />
         <item itemvalue="Application.TestParticleHTTP" />
         <item itemvalue="Application.TestHTTP" />
         <item itemvalue="JAR Application.ij.jar" />
@@ -114,5 +177,34 @@
       <updated>1569339734741</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/ProcessImageBatchController.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/ProcessImageBatchController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

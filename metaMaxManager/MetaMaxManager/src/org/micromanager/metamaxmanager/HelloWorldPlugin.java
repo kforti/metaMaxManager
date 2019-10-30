@@ -50,7 +50,7 @@ public class HelloWorldPlugin implements MMPlugin {
       app_ = app;
       core_ = app.getMMCore();
       model_ = new Model();
-      MetaMaxView view = new MetaMaxView(model_);
+      MetaMaxView view = new MetaMaxView(model_, core_);
       app_.addMMBackgroundListener(view);
       app_.addMMListener(view);
       view.start();
