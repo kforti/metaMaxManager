@@ -1,11 +1,8 @@
 package org.micromanager.metamaxmanager.view;
 //
 import mmcorej.CMMCore;
-import org.apache.http.client.HttpResponseException;
-import org.apache.http.message.BasicNameValuePair;
 import org.micromanager.api.MMListenerInterface;
-import org.micromanager.metamaxmanager.controller.HTTPPostRequestController;
-import org.micromanager.metamaxmanager.controller.ProcessImageBatchController;
+import org.micromanager.metamaxmanager.controller.CalibrationController;
 import org.micromanager.metamaxmanager.model.Model;
 
 import javax.swing.*;
@@ -18,9 +15,11 @@ public class MetaMaxView extends JFrame implements MMListenerInterface {
     private JButton led_button;
     private JTextField textField1;
     private JTextField particleCommField;
-    private JButton button1;
+    private JButton start_calibration_button;
     private JButton connect_device_button;
     private JTextField textField2;
+    private JSlider intensity_slider;
+    private JButton calibrate_button;
     Model model;
     CMMCore core;
 
@@ -35,37 +34,43 @@ public class MetaMaxView extends JFrame implements MMListenerInterface {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
-
-                if (model.ledState().equalsIgnoreCase("off")) {
-                    textField1.setText("on");
-                    model.flipLedState();
-                    urlParameters.add(new BasicNameValuePair("arg", "on"));
-                } else if (model.ledState().equalsIgnoreCase("on")) {
-                    textField1.setText("off");
-                    model.flipLedState();
-                    urlParameters.add(new BasicNameValuePair("arg", "off"));
-                } else {
-                    textField1.setText("neither");
-                }
-
-                try {
-                    try {
-                        String comm = new HTTPPostRequestController(urlParameters, model, "led").process();
-                        particleCommField.setText(comm);
-                        return;
-                    } catch (HttpResponseException e) {
-                        System.err.println(e.getMessage());
-                    }
-                } catch (Throwable t) {
-                    t.printStackTrace();
-                }
-                System.exit(1);
+//                if (model.ledState().equalsIgnoreCase("off")) {
+//                    textField1.setText("on");
+//                    model.flipLedState();
+//                    urlParameters.add(new BasicNameValuePair("arg", "on"));
+//                } else if (model.ledState().equalsIgnoreCase("on")) {
+//                    textField1.setText("off");
+//                    model.flipLedState();
+//                    urlParameters.add(new BasicNameValuePair("arg", "off"));
+//                } else {
+//                    textField1.setText("neither");
+//                }
+//
+//                try {
+//                    try {
+//                        String comm = new HTTPPostRequestController(urlParameters, model, "led").process();
+//                        particleCommField.setText(comm);
+//                        return;
+//                    } catch (HttpResponseException e) {
+//                        System.err.println(e.getMessage());
+//                    }
+//                } catch (Throwable t) {
+//                    t.printStackTrace();
+//                }
+//                System.exit(1);
             }
         });
-        button1.addActionListener(new ActionListener() {
+        start_calibration_button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                new ProcessImageBatchController(core, model, MetaMaxView.this).process();
+                intensity_slider.enable(true);
+
+            }
+        });
+        calibrate_button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                new CalibrationController(core, model, MetaMaxView.this).process();
             }
         });
     }
@@ -73,6 +78,7 @@ public class MetaMaxView extends JFrame implements MMListenerInterface {
     public void setComm(String input) {
         particleCommField.setText(input);
     }
+
 
     @Override
     public void propertiesChangedAlert() {
@@ -138,18 +144,27 @@ public class MetaMaxView extends JFrame implements MMListenerInterface {
         label1.setText("MetaMax");
         meta_app_pane.add(label1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JPanel panel1 = new JPanel();
-        panel1.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(4, 1, new Insets(0, 0, 0, 0), -1, -1));
+        panel1.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(7, 1, new Insets(0, 0, 0, 0), -1, -1));
         meta_app_pane.add(panel1, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
         particleCommField = new JTextField();
-        panel1.add(particleCommField, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        panel1.add(particleCommField, new com.intellij.uiDesigner.core.GridConstraints(3, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
         textField1 = new JTextField();
-        panel1.add(textField1, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        panel1.add(textField1, new com.intellij.uiDesigner.core.GridConstraints(4, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
         led_button = new JButton();
         led_button.setText("LED Button");
-        panel1.add(led_button, new com.intellij.uiDesigner.core.GridConstraints(3, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        button1 = new JButton();
-        button1.setText("Button");
-        panel1.add(button1, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        panel1.add(led_button, new com.intellij.uiDesigner.core.GridConstraints(6, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        intensity_slider = new JSlider();
+        intensity_slider.setEnabled(false);
+        panel1.add(intensity_slider, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        final JLabel label2 = new JLabel();
+        label2.setText("MM Intensity");
+        panel1.add(label2, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        start_calibration_button = new JButton();
+        start_calibration_button.setText("Start Calibration");
+        panel1.add(start_calibration_button, new com.intellij.uiDesigner.core.GridConstraints(5, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        calibrate_button = new JButton();
+        calibrate_button.setText("Calibrate");
+        panel1.add(calibrate_button, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JPanel panel2 = new JPanel();
         panel2.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(3, 1, new Insets(0, 0, 0, 0), -1, -1));
         meta_app_pane.add(panel2, new com.intellij.uiDesigner.core.GridConstraints(1, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));

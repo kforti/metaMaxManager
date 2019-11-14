@@ -6,11 +6,13 @@ public class Model {
     String access_token = "b0b4abf352e4813771428d70189ad7b128a5fba3";
     String device_id = "4b001c001851373237343331";
     String led_state;
+    int batch_size;
 
     Device device;
 
-    public void Model(){
+    public Model(int batch_size){
         this.led_state = "off";
+        this.batch_size = batch_size;
     }
 
     public String ledState(){
@@ -38,6 +40,10 @@ public class Model {
     public void setDevice(Device d) {
         device = d;
         return;
+    }
+
+    public int getBatchSize() {
+        return batch_size;
     }
 
 }

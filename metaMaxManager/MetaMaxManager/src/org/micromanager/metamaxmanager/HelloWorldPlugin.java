@@ -41,6 +41,10 @@ public class HelloWorldPlugin implements MMPlugin {
 
    Model model_;
 
+
+   // Configuration Settings
+   private int BATCH_SIZE = 2;
+
    public static void main(){
       return;
    }
@@ -49,7 +53,7 @@ public class HelloWorldPlugin implements MMPlugin {
    public void setApp(ScriptInterface app) {
       app_ = app;
       core_ = app.getMMCore();
-      model_ = new Model();
+      model_ = new Model(BATCH_SIZE);
       MetaMaxView view = new MetaMaxView(model_, core_);
       app_.addMMBackgroundListener(view);
       app_.addMMListener(view);
