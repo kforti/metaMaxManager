@@ -5,6 +5,8 @@ import mmcorej.CMMCore;
 import org.micromanager.metamaxmanager.image_acquisition.ImageAcquisitionRunnable;
 import org.micromanager.metamaxmanager.model.Model;
 
+import java.time.Duration;
+import java.time.LocalTime;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -15,6 +17,7 @@ public class ManualCalibrationManager {
     int images;
     int[] summedImage;
     long[] squaredImage;
+    int batchSize = 1000;
 
     Model model_;
     CMMCore core_;
@@ -30,7 +33,8 @@ public class ManualCalibrationManager {
 //        imageAcquisitionThread = new Thread(imgAcq);
 //        imageAcquisitionThread.start();
         int imageLength = 0;
-        while (images < 1000000) {
+        LocalTime start = LocalTime.now();
+        while (images < batchSize) {
 
             try {
                 this.core_.snapImage();
@@ -56,6 +60,14 @@ public class ManualCalibrationManager {
                 System.out.println(images);
             }
         }
+        System.out.println("Summed images: " + summedImage[0]);
+        System.out.println("Summed images: " + squaredImage[0] + "\n");
+
+        LocalTime finish = LocalTime.now();
+        System.out.println("Number of Images Processed: " + batchSize);
+        System.out.println("Started Processing: " + start);
+        System.out.println("Finished Processing: " + finish);
+        System.out.println(Duration.between(start, finish).getSeconds());
     }
 
 }

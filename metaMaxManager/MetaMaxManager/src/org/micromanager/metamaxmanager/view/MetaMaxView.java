@@ -3,6 +3,7 @@ package org.micromanager.metamaxmanager.view;
 import mmcorej.CMMCore;
 import org.micromanager.api.MMListenerInterface;
 import org.micromanager.metamaxmanager.controller.CalibrationController;
+import org.micromanager.metamaxmanager.controller.MetaMaxController;
 import org.micromanager.metamaxmanager.model.Model;
 
 import javax.swing.*;
@@ -17,7 +18,7 @@ public class MetaMaxView extends JFrame implements MMListenerInterface {
     private JTextField particleCommField;
     private JButton start_calibration_button;
     private JButton connect_device_button;
-    private JTextField textField2;
+    private JTextField connectedField;
     private JSlider intensity_slider;
     private JButton calibrate_button;
     Model model;
@@ -28,38 +29,6 @@ public class MetaMaxView extends JFrame implements MMListenerInterface {
         this.model = m;
         this.core = c;
 
-
-        led_button.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-
-//                if (model.ledState().equalsIgnoreCase("off")) {
-//                    textField1.setText("on");
-//                    model.flipLedState();
-//                    urlParameters.add(new BasicNameValuePair("arg", "on"));
-//                } else if (model.ledState().equalsIgnoreCase("on")) {
-//                    textField1.setText("off");
-//                    model.flipLedState();
-//                    urlParameters.add(new BasicNameValuePair("arg", "off"));
-//                } else {
-//                    textField1.setText("neither");
-//                }
-//
-//                try {
-//                    try {
-//                        String comm = new HTTPPostRequestController(urlParameters, model, "led").process();
-//                        particleCommField.setText(comm);
-//                        return;
-//                    } catch (HttpResponseException e) {
-//                        System.err.println(e.getMessage());
-//                    }
-//                } catch (Throwable t) {
-//                    t.printStackTrace();
-//                }
-//                System.exit(1);
-            }
-        });
         start_calibration_button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -73,10 +42,24 @@ public class MetaMaxView extends JFrame implements MMListenerInterface {
                 new CalibrationController(core, model, MetaMaxView.this).process();
             }
         });
+        connect_device_button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                try {
+                    new MetaMaxController(MetaMaxView.this, model).isConnected();
+                } catch (Exception e) {
+
+                }
+            }
+        });
     }
 
     public void setComm(String input) {
         particleCommField.setText(input);
+    }
+
+    public void setConnectedField(String status) {
+        connectedField.setText(status);
     }
 
 
@@ -173,9 +156,9 @@ public class MetaMaxView extends JFrame implements MMListenerInterface {
         panel2.add(connect_device_button, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final com.intellij.uiDesigner.core.Spacer spacer1 = new com.intellij.uiDesigner.core.Spacer();
         panel2.add(spacer1, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
-        textField2 = new JTextField();
-        textField2.setEditable(false);
-        panel2.add(textField2, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        connectedField = new JTextField();
+        connectedField.setEditable(false);
+        panel2.add(connectedField, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
     }
 
     /**

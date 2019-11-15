@@ -2,24 +2,39 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="helloWorldPlugin:jar" />
+      <artifact name="MetaMax_MMPlugin:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e55f510-1325-4227-92e3-3ebfc00cf88b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/helloWorldPlugin_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MetaMax_MMPlugin_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/CalibrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/CalibrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_acquisition/ImageAcquisitionRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_acquisition/ImageAcquisitionRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_acquisition/ImageAcquisitionThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_processing/ImageBatchManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_processing/ImagePixelStatistics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/HelloWorldPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/MetaMax_MMPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/MetaMaxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/MetaMaxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/dbaccess/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/dbaccess/MongoDBConnect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/managers/ManualCalibrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/managers/ManualCalibrationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/tests/ImageStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/tests/ImageStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/tests/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/tests/RunTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helloWorldPlugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/helloWorldPlugin.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_images" beforeDir="false" afterPath="$PROJECT_DIR$/test_images" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.form" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/tests/ImageStats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/tests/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/tests/RunImageProcessingTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/tests/TestDeviceComm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helloWorldPlugin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/HelloWorldPlugin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/controller/MetaMaxController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/controller/MetaMaxController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/dbaccess/DBConnect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/managers/ManualCalibrationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/managers/ManualCalibrationManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/ImageStats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/RunTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/TestDeviceComm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_images" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_images_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_images_1" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,23 +64,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="findjar.last.used.dir" value="$USER_HOME$/bin" />
     <property name="last_opened_file_path" value="$USER_HOME$/NanoJ-Fluidics" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/HelloWorld/src/org/micromanager/helloworld/view" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/.idea" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/HelloWorld" />
+      <recent name="$PROJECT_DIR$/HelloWorld/src/org/micromanager/helloworld/view" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/HelloWorld/src/org/micromanager/helloworld/view" />
     </key>
   </component>
@@ -81,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RunTests">
+  <component name="RunManager" selected="Application.RunImageProcessingTests">
     <configuration name="ImageJ" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -92,8 +107,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tests.RunTests" />
+    <configuration name="RunImageProcessingTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.RunImageProcessingTests" />
       <module name="metaMaxManager" />
       <extension name="coverage">
         <pattern>
@@ -140,12 +155,12 @@
       <item itemvalue="Application.ImageJ" />
       <item itemvalue="Application.TestHTTP" />
       <item itemvalue="Application.TestParticleHTTP" />
-      <item itemvalue="Application.RunTests" />
+      <item itemvalue="Application.RunImageProcessingTests" />
       <item itemvalue="JAR Application.ij.jar" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RunTests" />
+        <item itemvalue="Application.RunImageProcessingTests" />
         <item itemvalue="Application.TestParticleHTTP" />
         <item itemvalue="Application.TestHTTP" />
         <item itemvalue="JAR Application.ij.jar" />
