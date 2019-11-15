@@ -7,6 +7,8 @@ import java.util.Queue;
 public class ImageAcquisitionRunnable implements Runnable{
     CMMCore core_;
     Queue imageQueue;
+    volatile boolean exit = false;
+    boolean capture = true;
 
     public ImageAcquisitionRunnable(CMMCore core, Queue iq) {
         this.core_ = core;
@@ -17,10 +19,28 @@ public class ImageAcquisitionRunnable implements Runnable{
     public void run() {
         try {
             this.core_.snapImage();
-            double image[] = (double[]) this.core_.getImage();
+            short image[] = (short[]) this.core_.getImage();
             imageQueue.add(image);
-        } catch (Exception e){
+
+
+        } catch (Exception e) {
 
         }
+    }
+
+    public void stop(){
+        exit = true;
+    }
+
+    public void stopCapture() {
+        capture = false;
+    }
+
+    public void startCapture() {
+        capture = true;
+    }
+
+    public int numImages() {
+        return imageQueue.size();
     }
 }

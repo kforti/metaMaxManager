@@ -1,17 +1,9 @@
 package org.micromanager.metamaxmanager.controller;
 
-import ij.process.ByteProcessor;
-import ij.process.ByteStatistics;
 import mmcorej.CMMCore;
-import org.micromanager.metamaxmanager.image_processing.ImageBatchManager;
-import org.micromanager.metamaxmanager.image_processing.ImagePixelStatistics;
+import org.micromanager.metamaxmanager.managers.ManualCalibrationManager;
 import org.micromanager.metamaxmanager.model.Model;
 import org.micromanager.metamaxmanager.view.MetaMaxView;
-
-
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.util.concurrent.TimeUnit;
 
 public class CalibrationController {
     CMMCore core;
@@ -30,7 +22,8 @@ public class CalibrationController {
         // check if calibration manager exists in model
 
         // init calibration manager
-
+        ManualCalibrationManager calibrationManager = new ManualCalibrationManager(model, core);
+        calibrationManager.run();
         // Start processing
 
         // Store data in cloud

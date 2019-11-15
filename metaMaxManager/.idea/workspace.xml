@@ -7,81 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e55f510-1325-4227-92e3-3ebfc00cf88b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/.idea/metaMaxManager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/build.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/HelloWorldPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/HTTPPostRequestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/ManualCalibrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/MetaMaxController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/dbaccess/CallibrationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/dbaccess/DBConnect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/image_processing/ImageBatchManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/image_processing/ImagePixelStatistics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/image_processing/ManualCalibrationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Device.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Intensity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/tests/ImageStats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/tests/RunTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager/tests/TestDeviceComm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/MetaMaxManager1.0.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/helloWorldPlugin.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MetaMaxManager1.0/push.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_4_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_4_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_4_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/CalibrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/dbaccess/CallibrationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/dbaccess/DBConnect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_acquisition/ImageAcquisitionRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_acquisition/ImageAcquisitionThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_processing/ImageBatchManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_processing/ManualCalibrationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/managers/ManualCalibrationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetaMaxManager/tests/ImageStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/metaMaxManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/metaMaxManager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/HelloWorldPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/HelloWorldPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/DeviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/MetaMaxController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/ProcessImageBatchController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_processing/ImagePixelStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_processing/ImagePixelStatistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.form" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/view/MetaMaxView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/CalibrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/CalibrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_acquisition/ImageAcquisitionRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_acquisition/ImageAcquisitionRunnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_acquisition/ImageAcquisitionThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_processing/ImageBatchManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/image_processing/ImagePixelStatistics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/managers/ManualCalibrationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/managers/ManualCalibrationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/model/Image.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetaMaxManager/tests/ImageStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/tests/ImageStats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MetaMaxManager/tests/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/tests/RunTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetaMaxManager/tests/TestDeviceComm.java" beforeDir="false" afterPath="$PROJECT_DIR$/MetaMaxManager/tests/TestDeviceComm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helloWorldPlugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/helloWorldPlugin.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/metaMaxManager.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/HelloWorldPlugin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/controller/DeviceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/controller/ProcessImageBatchController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/model/Device.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/model/Model.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/micromanager/metamaxmanager/view/MetaMaxView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/RunTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tests/TestDeviceComm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_images" beforeDir="false" afterPath="$PROJECT_DIR$/test_images" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +49,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="findjar.last.used.dir" value="$USER_HOME$/bin" />
     <property name="last_opened_file_path" value="$USER_HOME$/NanoJ-Fluidics" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -245,7 +183,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/MetaMaxManager/src/org/micromanager/metamaxmanager/controller/CalibrationController.java</url>
-          <line>38</line>
+          <line>31</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
